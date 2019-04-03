@@ -1,4 +1,4 @@
-# Spring Boot + Kafka + Schema Registry - Tutorial
+# Spring Boot + Kafka + Schema Registry - Primer
 
 ## What is Schema Registry?
 
@@ -153,7 +153,7 @@ The generated source code comes in very handy to process messages in our applica
 Now let's see how this is done.
 Open the main application class defined in the source file SpringKafkaRegistryApplication.java from following location:
 
-spring-kafka-registry\src\main\java\com\sunilvb\demo
+spring-kafka-registry\src\main\java\com\solstice\demo
 
 Notice that we properties that are defined to ensure we are able to interact with the Kafka and Schema Registry instances  
 ```
@@ -267,7 +267,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Authors
 
-* **Andrey Danilkovich** - *Initial work* - [sunilvb](https://github.com/andreydanil)
+* **Andrey Danilkovich** - *Initial work* - [andreydanil](https://github.com/andreydanil)
 
 
 ## License
