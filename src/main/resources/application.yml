@@ -1,0 +1,32 @@
+server:
+  port: 9000
+spring:
+  kafka:
+    topic:
+      avro: user
+    consumer:
+      schema:
+        registry:
+          url: localhost:8081
+      bootstrap-servers: localhost:29092
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: localhost:29092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+swagger:
+  exposedPackage: com.demo.controllers
+  title: Solstice Coin API
+  description: Rest API for Solstice Coin internal project
+  contact:
+    name: Solstice, LLC
+    url: https://sites.google.com/solstice.com/solstice-coin/home
+    email: solsticecoin@solstice.com
+
+#logging:
+#  level:
+#    root: DEBUG
+#    org.springframework.web: INFO
+

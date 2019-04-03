@@ -1,0 +1,5 @@
+kafka:
+#  bootstrap-servers: localhost:9092
+  bootstrap-servers: ${spring.embedded.kafka.brokers}
+  topic:
+    avro: schema-registry-demo
