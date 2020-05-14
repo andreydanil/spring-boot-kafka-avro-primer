@@ -13,7 +13,7 @@ public class Sender {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Sender.class);
 
-    private static final String TOPIC = "users";
+    private static final String TOPIC = "users-demo";
 
     @Value("${spring.kafka.topic.avro}")
     private String avroTopic;
@@ -30,4 +30,8 @@ public class Sender {
         LOGGER.info(String.format("#### -> Producing message -> %s", user.toString()));
         this.kafkaTemplate.send(TOPIC, user);
     }
+
+    /**
+     * SQL
+     */
 }

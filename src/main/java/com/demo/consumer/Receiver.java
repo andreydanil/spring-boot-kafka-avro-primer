@@ -19,7 +19,7 @@ public class Receiver {
         return latch;
     }
 
-    @KafkaListener(topics = "users", groupId = "group_id")
+    @KafkaListener(topics = "users-demo", groupId = "group_id")
     public void consume(example.avro.User message) throws IOException {
         LOGGER.info(String.format("#### -> Consumed message -> %s", message));
     }
