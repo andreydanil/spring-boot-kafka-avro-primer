@@ -148,7 +148,7 @@ mvn generate-sources
 
 The generated source code comes in very handy to process messages in our application.
 
-###Spring Boot Application
+### Spring Boot Application
 
 Now let's see how this is done.
 Open the main application class defined in the source file SpringKafkaRegistryApplication.java from following location:
